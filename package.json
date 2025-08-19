@@ -1,0 +1,32 @@
+{
+  "name": "to-do-telegram-bot",
+  "version": "1.0.0",
+  "main": "./dist/main.js",
+  "type": "commonjs",
+  "scripts": {
+    "build": "tsc",
+    "start": "cross-env NODE_ENV=prod node ./dist/index.js",
+    "dev": "cross-env NODE_ENV=dev nodemon ./src/index.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@types/node": "^24.3.0",
+    "cross-env": "^10.0.0",
+    "nodemon": "^3.1.10",
+    "ts-node": "^10.9.2",
+    "tsconfig-paths": "^4.2.0",
+    "tsx": "^4.20.4",
+    "typescript": "^5.9.2"
+  },
+  "dependencies": {
+    "dotenv": "^17.2.1",
+    "grammy": "^1.38.1",
+    "node-cron": "^4.2.1",
+    "pg": "^8.16.3",
+    "redis": "^5.8.1",
+    "typeorm": "^0.3.26"
+  }
+}
