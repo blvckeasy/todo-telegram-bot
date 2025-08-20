@@ -27,7 +27,7 @@ export async function callback (ctx: CommandContext<Context>) {
         `✅ <b>Loyihadan foydalanishingiz mumkin!</b>
 
         📝 /add - Yangi TODO qo'shish
-        📋 /tasks - Umumiy Tasklarni ko'rish
+        📋 /tasks - Umumiy Tasklarni ko'rish (Tugatish va O'chirish ichida)
 
         ⏰ Notifikatsiya rejimi ham mavjud!`,
         { parse_mode: "HTML" }

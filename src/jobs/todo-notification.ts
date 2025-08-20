@@ -10,8 +10,7 @@ export async function notificationJobForNotComplatedTodos(bot: Bot) {
     cron.schedule("* * * * *", async () => {
         const todoRepository = PostgresDataSource.getRepository(Todo);
 
-        const now = new Date(new Date().setSeconds(0, 0));
-
+        const now = new Date(new Date().setSeconds(0, 0)); // sekund bilan millisekundni 0 ga tushiradi
 
         const todos = await todoRepository.find({
             where: {
